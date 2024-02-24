@@ -1,0 +1,11 @@
+
+.posts_list {
+    display: grid;
+    grid-gap: 20px;
+}
+
+
+.loading {
+    text-align: center;
+    font-style: italic;
+  }
