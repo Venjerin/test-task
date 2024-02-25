@@ -11,7 +11,7 @@ const PostsList: React.FC = () => {
   return (
     <div className={s.posts_list}>
       {posts.map((post: PostType) => (
-        <Post post={post}></Post>
+        <Post post={post} key={post.id}></Post>
       ))}
     </div>
   );
