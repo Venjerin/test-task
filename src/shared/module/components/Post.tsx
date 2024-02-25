@@ -17,7 +17,7 @@ const Post: React.FC<PostProps> = ({post}) => {
     <>
       <div className={s.post} key={post.id}>
         <h2>{post.id}. {post.title.charAt(0).toUpperCase() + post.title.slice(1)}</h2>
-        <p>{post.body.charAt(0).toUpperCase() + post.body.slice(1)}</p>
+        <p>{post.body.charAt(0).toUpperCase() + post.body.slice(1, 100) + "..."}</p>
         <Link to={`/posts/${post.id}`} className={s.view_button}>Просмотр</Link>
       </div>
     </>
